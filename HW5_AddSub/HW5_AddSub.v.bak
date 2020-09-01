@@ -1,0 +1,17 @@
+module AddSub (A, B, E, Sum, Carry);
+	input [3:0] A, B;
+	output [3:0] Sum;
+	input E;
+	output Carry;
+	
+	wire c1, c2, c3, x0, x1, x2, x3;
+	
+	xor x_0(E, x0, B[0]);
+	Full_Adder1 (E, x0, Sum[0], c1);
+	xor x_1(E, x0, B[1]);
+	Full_Adder1 (E, x1, Sum[1], c2);
+	xor x_2(E, x0, B[2]);
+	Full_Adder2 (E, x2, Sum[2], c3);
+	xor x_3(E, x0, B[3]);
+	Full_Adder3 (E, x3, Sum[3], Carry);
+endmodule

@@ -1,0 +1,12 @@
+|HW5_substractor
+A => Add1.IN4
+A => Add2.IN2
+B => Add0.IN1
+B => Add2.IN1
+Z => Add0.IN2
+Z => Add3.IN4
+E => Decoder0.IN0
+SumDiff <= SumDiff~0.DB_MAX_OUTPUT_PORT_TYPE
+BinCarry <= BinCarry~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

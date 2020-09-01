@@ -1,0 +1,14 @@
+# do clock_divider.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_divider_vlg_sample_tst
+# -- Compiling module clock_divider_vlg_check_tst
+# -- Compiling module clock_divider_vlg_vec_tst
+# 
+# Top level modules:
+# 	clock_divider_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.clock_divider_vlg_vec_tst 

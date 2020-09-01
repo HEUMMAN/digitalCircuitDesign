@@ -1,0 +1,583 @@
+Simulator report for clock_divider
+Wed Jun 03 22:53:38 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 302 nodes    ;
+; Simulation Coverage         ;      58.94 % ;
+; Total Number of Transitions ; 12871799     ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                  ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                             ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                   ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                    ;               ;
+; Vector input source                                                                        ; E:/altera/13.0sp1/project/clock_divider/Waveform11.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                     ; On            ;
+; Check outputs                                                                              ; Off                                                    ; Off           ;
+; Report simulation coverage                                                                 ; On                                                     ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                     ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                     ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                     ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                    ; Off           ;
+; Detect glitches                                                                            ; Off                                                    ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                    ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                    ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                    ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                    ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                     ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                             ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                    ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                    ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                   ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      58.94 % ;
+; Total nodes checked                                 ; 302          ;
+; Total output ports checked                          ; 302          ;
+; Total output ports with complete 1/0-value coverage ; 178          ;
+; Total output ports with no 1/0-value coverage       ; 119          ;
+; Total output ports with no 1-value coverage         ; 119          ;
+; Total output ports with no 0-value coverage         ; 124          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                  ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |clock_divider|clk2~reg0    ; |clock_divider|clk2~reg0    ; regout           ;
+; |clock_divider|count~4      ; |clock_divider|count~4      ; out              ;
+; |clock_divider|count~5      ; |clock_divider|count~5      ; out              ;
+; |clock_divider|count~6      ; |clock_divider|count~6      ; out              ;
+; |clock_divider|count~7      ; |clock_divider|count~7      ; out              ;
+; |clock_divider|count~8      ; |clock_divider|count~8      ; out              ;
+; |clock_divider|count~9      ; |clock_divider|count~9      ; out              ;
+; |clock_divider|clk1~0       ; |clock_divider|clk1~0       ; out              ;
+; |clock_divider|count1~0     ; |clock_divider|count1~0     ; out              ;
+; |clock_divider|count1~1     ; |clock_divider|count1~1     ; out              ;
+; |clock_divider|count1~2     ; |clock_divider|count1~2     ; out              ;
+; |clock_divider|count1~3     ; |clock_divider|count1~3     ; out              ;
+; |clock_divider|count1~4     ; |clock_divider|count1~4     ; out              ;
+; |clock_divider|count1~5     ; |clock_divider|count1~5     ; out              ;
+; |clock_divider|count1~6     ; |clock_divider|count1~6     ; out              ;
+; |clock_divider|count1~7     ; |clock_divider|count1~7     ; out              ;
+; |clock_divider|count1~8     ; |clock_divider|count1~8     ; out              ;
+; |clock_divider|count1~9     ; |clock_divider|count1~9     ; out              ;
+; |clock_divider|count1~10    ; |clock_divider|count1~10    ; out              ;
+; |clock_divider|count1~11    ; |clock_divider|count1~11    ; out              ;
+; |clock_divider|count1~12    ; |clock_divider|count1~12    ; out              ;
+; |clock_divider|count1~13    ; |clock_divider|count1~13    ; out              ;
+; |clock_divider|count1~14    ; |clock_divider|count1~14    ; out              ;
+; |clock_divider|count1~15    ; |clock_divider|count1~15    ; out              ;
+; |clock_divider|count1~16    ; |clock_divider|count1~16    ; out              ;
+; |clock_divider|count1~17    ; |clock_divider|count1~17    ; out              ;
+; |clock_divider|count1~18    ; |clock_divider|count1~18    ; out              ;
+; |clock_divider|count1~19    ; |clock_divider|count1~19    ; out              ;
+; |clock_divider|clk2~0       ; |clock_divider|clk2~0       ; out              ;
+; |clock_divider|count2~6     ; |clock_divider|count2~6     ; out              ;
+; |clock_divider|count2~7     ; |clock_divider|count2~7     ; out              ;
+; |clock_divider|count2~8     ; |clock_divider|count2~8     ; out              ;
+; |clock_divider|count2~9     ; |clock_divider|count2~9     ; out              ;
+; |clock_divider|count~14     ; |clock_divider|count~14     ; out              ;
+; |clock_divider|count~15     ; |clock_divider|count~15     ; out              ;
+; |clock_divider|count~16     ; |clock_divider|count~16     ; out              ;
+; |clock_divider|count~17     ; |clock_divider|count~17     ; out              ;
+; |clock_divider|count~18     ; |clock_divider|count~18     ; out              ;
+; |clock_divider|count~19     ; |clock_divider|count~19     ; out              ;
+; |clock_divider|clk1~1       ; |clock_divider|clk1~1       ; out              ;
+; |clock_divider|count2~16    ; |clock_divider|count2~16    ; out              ;
+; |clock_divider|count2~17    ; |clock_divider|count2~17    ; out              ;
+; |clock_divider|count2~18    ; |clock_divider|count2~18    ; out              ;
+; |clock_divider|count2~19    ; |clock_divider|count2~19    ; out              ;
+; |clock_divider|clk3~0       ; |clock_divider|clk3~0       ; out              ;
+; |clock_divider|count3~8     ; |clock_divider|count3~8     ; out              ;
+; |clock_divider|count3~9     ; |clock_divider|count3~9     ; out              ;
+; |clock_divider|count~24     ; |clock_divider|count~24     ; out              ;
+; |clock_divider|count~25     ; |clock_divider|count~25     ; out              ;
+; |clock_divider|count~26     ; |clock_divider|count~26     ; out              ;
+; |clock_divider|count~27     ; |clock_divider|count~27     ; out              ;
+; |clock_divider|count~28     ; |clock_divider|count~28     ; out              ;
+; |clock_divider|count~29     ; |clock_divider|count~29     ; out              ;
+; |clock_divider|count1~20    ; |clock_divider|count1~20    ; out              ;
+; |clock_divider|count1~21    ; |clock_divider|count1~21    ; out              ;
+; |clock_divider|count1~22    ; |clock_divider|count1~22    ; out              ;
+; |clock_divider|count1~23    ; |clock_divider|count1~23    ; out              ;
+; |clock_divider|count1~24    ; |clock_divider|count1~24    ; out              ;
+; |clock_divider|count1~25    ; |clock_divider|count1~25    ; out              ;
+; |clock_divider|count1~26    ; |clock_divider|count1~26    ; out              ;
+; |clock_divider|count1~27    ; |clock_divider|count1~27    ; out              ;
+; |clock_divider|count1~28    ; |clock_divider|count1~28    ; out              ;
+; |clock_divider|count1~29    ; |clock_divider|count1~29    ; out              ;
+; |clock_divider|clk2~1       ; |clock_divider|clk2~1       ; out              ;
+; |clock_divider|clk1~2       ; |clock_divider|clk1~2       ; out              ;
+; |clock_divider|count3~18    ; |clock_divider|count3~18    ; out              ;
+; |clock_divider|count3~19    ; |clock_divider|count3~19    ; out              ;
+; |clock_divider|count~34     ; |clock_divider|count~34     ; out              ;
+; |clock_divider|count~35     ; |clock_divider|count~35     ; out              ;
+; |clock_divider|count~36     ; |clock_divider|count~36     ; out              ;
+; |clock_divider|count~37     ; |clock_divider|count~37     ; out              ;
+; |clock_divider|count~38     ; |clock_divider|count~38     ; out              ;
+; |clock_divider|count~39     ; |clock_divider|count~39     ; out              ;
+; |clock_divider|count2~26    ; |clock_divider|count2~26    ; out              ;
+; |clock_divider|count2~27    ; |clock_divider|count2~27    ; out              ;
+; |clock_divider|count2~28    ; |clock_divider|count2~28    ; out              ;
+; |clock_divider|count2~29    ; |clock_divider|count2~29    ; out              ;
+; |clock_divider|clk3~1       ; |clock_divider|clk3~1       ; out              ;
+; |clock_divider|count1~30    ; |clock_divider|count1~30    ; out              ;
+; |clock_divider|count1~31    ; |clock_divider|count1~31    ; out              ;
+; |clock_divider|count1~32    ; |clock_divider|count1~32    ; out              ;
+; |clock_divider|count1~33    ; |clock_divider|count1~33    ; out              ;
+; |clock_divider|count1~34    ; |clock_divider|count1~34    ; out              ;
+; |clock_divider|count1~35    ; |clock_divider|count1~35    ; out              ;
+; |clock_divider|count1~36    ; |clock_divider|count1~36    ; out              ;
+; |clock_divider|count1~37    ; |clock_divider|count1~37    ; out              ;
+; |clock_divider|count1~38    ; |clock_divider|count1~38    ; out              ;
+; |clock_divider|count1~39    ; |clock_divider|count1~39    ; out              ;
+; |clock_divider|clk2~2       ; |clock_divider|clk2~2       ; out              ;
+; |clock_divider|count[4]     ; |clock_divider|count[4]     ; regout           ;
+; |clock_divider|count[3]     ; |clock_divider|count[3]     ; regout           ;
+; |clock_divider|count[2]     ; |clock_divider|count[2]     ; regout           ;
+; |clock_divider|count[1]     ; |clock_divider|count[1]     ; regout           ;
+; |clock_divider|count[0]     ; |clock_divider|count[0]     ; regout           ;
+; |clock_divider|clk1~reg0    ; |clock_divider|clk1~reg0    ; regout           ;
+; |clock_divider|count2[3]    ; |clock_divider|count2[3]    ; regout           ;
+; |clock_divider|count2[2]    ; |clock_divider|count2[2]    ; regout           ;
+; |clock_divider|count2[1]    ; |clock_divider|count2[1]    ; regout           ;
+; |clock_divider|count2[0]    ; |clock_divider|count2[0]    ; regout           ;
+; |clock_divider|count1[9]    ; |clock_divider|count1[9]    ; regout           ;
+; |clock_divider|count1[8]    ; |clock_divider|count1[8]    ; regout           ;
+; |clock_divider|count1[7]    ; |clock_divider|count1[7]    ; regout           ;
+; |clock_divider|count1[6]    ; |clock_divider|count1[6]    ; regout           ;
+; |clock_divider|count1[5]    ; |clock_divider|count1[5]    ; regout           ;
+; |clock_divider|count1[4]    ; |clock_divider|count1[4]    ; regout           ;
+; |clock_divider|count1[3]    ; |clock_divider|count1[3]    ; regout           ;
+; |clock_divider|count1[2]    ; |clock_divider|count1[2]    ; regout           ;
+; |clock_divider|count1[1]    ; |clock_divider|count1[1]    ; regout           ;
+; |clock_divider|count1[0]    ; |clock_divider|count1[0]    ; regout           ;
+; |clock_divider|clk          ; |clock_divider|clk          ; out              ;
+; |clock_divider|clk1         ; |clock_divider|clk1         ; pin_out          ;
+; |clock_divider|clk2         ; |clock_divider|clk2         ; pin_out          ;
+; |clock_divider|LessThan1~0  ; |clock_divider|LessThan1~0  ; out0             ;
+; |clock_divider|LessThan1~1  ; |clock_divider|LessThan1~1  ; out0             ;
+; |clock_divider|LessThan1~2  ; |clock_divider|LessThan1~2  ; out0             ;
+; |clock_divider|LessThan1~3  ; |clock_divider|LessThan1~3  ; out0             ;
+; |clock_divider|LessThan1~4  ; |clock_divider|LessThan1~4  ; out0             ;
+; |clock_divider|LessThan1~5  ; |clock_divider|LessThan1~5  ; out0             ;
+; |clock_divider|LessThan1~6  ; |clock_divider|LessThan1~6  ; out0             ;
+; |clock_divider|LessThan1~7  ; |clock_divider|LessThan1~7  ; out0             ;
+; |clock_divider|LessThan1~8  ; |clock_divider|LessThan1~8  ; out0             ;
+; |clock_divider|LessThan1~9  ; |clock_divider|LessThan1~9  ; out0             ;
+; |clock_divider|LessThan1~10 ; |clock_divider|LessThan1~10 ; out0             ;
+; |clock_divider|LessThan1~11 ; |clock_divider|LessThan1~11 ; out0             ;
+; |clock_divider|LessThan1~12 ; |clock_divider|LessThan1~12 ; out0             ;
+; |clock_divider|LessThan1~13 ; |clock_divider|LessThan1~13 ; out0             ;
+; |clock_divider|LessThan1~14 ; |clock_divider|LessThan1~14 ; out0             ;
+; |clock_divider|LessThan2~0  ; |clock_divider|LessThan2~0  ; out0             ;
+; |clock_divider|LessThan2~1  ; |clock_divider|LessThan2~1  ; out0             ;
+; |clock_divider|LessThan2~2  ; |clock_divider|LessThan2~2  ; out0             ;
+; |clock_divider|LessThan2~3  ; |clock_divider|LessThan2~3  ; out0             ;
+; |clock_divider|LessThan2~4  ; |clock_divider|LessThan2~4  ; out0             ;
+; |clock_divider|LessThan2~5  ; |clock_divider|LessThan2~5  ; out0             ;
+; |clock_divider|LessThan2~6  ; |clock_divider|LessThan2~6  ; out0             ;
+; |clock_divider|LessThan3~0  ; |clock_divider|LessThan3~0  ; out0             ;
+; |clock_divider|LessThan3~1  ; |clock_divider|LessThan3~1  ; out0             ;
+; |clock_divider|LessThan3~2  ; |clock_divider|LessThan3~2  ; out0             ;
+; |clock_divider|LessThan3~3  ; |clock_divider|LessThan3~3  ; out0             ;
+; |clock_divider|LessThan3~4  ; |clock_divider|LessThan3~4  ; out0             ;
+; |clock_divider|LessThan3~5  ; |clock_divider|LessThan3~5  ; out0             ;
+; |clock_divider|LessThan3~6  ; |clock_divider|LessThan3~6  ; out0             ;
+; |clock_divider|LessThan3~7  ; |clock_divider|LessThan3~7  ; out0             ;
+; |clock_divider|LessThan3~8  ; |clock_divider|LessThan3~8  ; out0             ;
+; |clock_divider|LessThan3~9  ; |clock_divider|LessThan3~9  ; out0             ;
+; |clock_divider|LessThan3~10 ; |clock_divider|LessThan3~10 ; out0             ;
+; |clock_divider|Add1~0       ; |clock_divider|Add1~0       ; out0             ;
+; |clock_divider|Add1~1       ; |clock_divider|Add1~1       ; out0             ;
+; |clock_divider|Add1~2       ; |clock_divider|Add1~2       ; out0             ;
+; |clock_divider|Add1~3       ; |clock_divider|Add1~3       ; out0             ;
+; |clock_divider|Add1~4       ; |clock_divider|Add1~4       ; out0             ;
+; |clock_divider|Add1~5       ; |clock_divider|Add1~5       ; out0             ;
+; |clock_divider|Add1~6       ; |clock_divider|Add1~6       ; out0             ;
+; |clock_divider|Add2~0       ; |clock_divider|Add2~0       ; out0             ;
+; |clock_divider|Add2~1       ; |clock_divider|Add2~1       ; out0             ;
+; |clock_divider|Add2~2       ; |clock_divider|Add2~2       ; out0             ;
+; |clock_divider|Add2~3       ; |clock_divider|Add2~3       ; out0             ;
+; |clock_divider|Add2~4       ; |clock_divider|Add2~4       ; out0             ;
+; |clock_divider|Add2~5       ; |clock_divider|Add2~5       ; out0             ;
+; |clock_divider|Add2~6       ; |clock_divider|Add2~6       ; out0             ;
+; |clock_divider|Add2~7       ; |clock_divider|Add2~7       ; out0             ;
+; |clock_divider|Add2~8       ; |clock_divider|Add2~8       ; out0             ;
+; |clock_divider|Add2~9       ; |clock_divider|Add2~9       ; out0             ;
+; |clock_divider|Add2~10      ; |clock_divider|Add2~10      ; out0             ;
+; |clock_divider|Add2~11      ; |clock_divider|Add2~11      ; out0             ;
+; |clock_divider|Add2~12      ; |clock_divider|Add2~12      ; out0             ;
+; |clock_divider|Add2~13      ; |clock_divider|Add2~13      ; out0             ;
+; |clock_divider|Add2~14      ; |clock_divider|Add2~14      ; out0             ;
+; |clock_divider|Add2~15      ; |clock_divider|Add2~15      ; out0             ;
+; |clock_divider|Add2~16      ; |clock_divider|Add2~16      ; out0             ;
+; |clock_divider|Add3~0       ; |clock_divider|Add3~0       ; out0             ;
+; |clock_divider|Add3~1       ; |clock_divider|Add3~1       ; out0             ;
+; |clock_divider|Add3~2       ; |clock_divider|Add3~2       ; out0             ;
+; |clock_divider|Add3~3       ; |clock_divider|Add3~3       ; out0             ;
+; |clock_divider|Add3~4       ; |clock_divider|Add3~4       ; out0             ;
+; |clock_divider|Add3~5       ; |clock_divider|Add3~5       ; out0             ;
+; |clock_divider|Add3~6       ; |clock_divider|Add3~6       ; out0             ;
+; |clock_divider|Add3~7       ; |clock_divider|Add3~7       ; out0             ;
+; |clock_divider|Add3~8       ; |clock_divider|Add3~8       ; out0             ;
++-----------------------------+-----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                     ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |clock_divider|count~0      ; |clock_divider|count~0      ; out              ;
+; |clock_divider|count~1      ; |clock_divider|count~1      ; out              ;
+; |clock_divider|count~2      ; |clock_divider|count~2      ; out              ;
+; |clock_divider|count~3      ; |clock_divider|count~3      ; out              ;
+; |clock_divider|count2~0     ; |clock_divider|count2~0     ; out              ;
+; |clock_divider|count2~1     ; |clock_divider|count2~1     ; out              ;
+; |clock_divider|count2~2     ; |clock_divider|count2~2     ; out              ;
+; |clock_divider|count2~3     ; |clock_divider|count2~3     ; out              ;
+; |clock_divider|count2~4     ; |clock_divider|count2~4     ; out              ;
+; |clock_divider|count2~5     ; |clock_divider|count2~5     ; out              ;
+; |clock_divider|count~10     ; |clock_divider|count~10     ; out              ;
+; |clock_divider|count~11     ; |clock_divider|count~11     ; out              ;
+; |clock_divider|count~12     ; |clock_divider|count~12     ; out              ;
+; |clock_divider|count~13     ; |clock_divider|count~13     ; out              ;
+; |clock_divider|count2~10    ; |clock_divider|count2~10    ; out              ;
+; |clock_divider|count2~11    ; |clock_divider|count2~11    ; out              ;
+; |clock_divider|count2~12    ; |clock_divider|count2~12    ; out              ;
+; |clock_divider|count2~13    ; |clock_divider|count2~13    ; out              ;
+; |clock_divider|count2~14    ; |clock_divider|count2~14    ; out              ;
+; |clock_divider|count2~15    ; |clock_divider|count2~15    ; out              ;
+; |clock_divider|count3~0     ; |clock_divider|count3~0     ; out              ;
+; |clock_divider|count3~1     ; |clock_divider|count3~1     ; out              ;
+; |clock_divider|count3~2     ; |clock_divider|count3~2     ; out              ;
+; |clock_divider|count3~3     ; |clock_divider|count3~3     ; out              ;
+; |clock_divider|count3~4     ; |clock_divider|count3~4     ; out              ;
+; |clock_divider|count3~5     ; |clock_divider|count3~5     ; out              ;
+; |clock_divider|count3~6     ; |clock_divider|count3~6     ; out              ;
+; |clock_divider|count3~7     ; |clock_divider|count3~7     ; out              ;
+; |clock_divider|count~20     ; |clock_divider|count~20     ; out              ;
+; |clock_divider|count~21     ; |clock_divider|count~21     ; out              ;
+; |clock_divider|count~22     ; |clock_divider|count~22     ; out              ;
+; |clock_divider|count~23     ; |clock_divider|count~23     ; out              ;
+; |clock_divider|count3~10    ; |clock_divider|count3~10    ; out              ;
+; |clock_divider|count3~11    ; |clock_divider|count3~11    ; out              ;
+; |clock_divider|count3~12    ; |clock_divider|count3~12    ; out              ;
+; |clock_divider|count3~13    ; |clock_divider|count3~13    ; out              ;
+; |clock_divider|count3~14    ; |clock_divider|count3~14    ; out              ;
+; |clock_divider|count3~15    ; |clock_divider|count3~15    ; out              ;
+; |clock_divider|count3~16    ; |clock_divider|count3~16    ; out              ;
+; |clock_divider|count3~17    ; |clock_divider|count3~17    ; out              ;
+; |clock_divider|clk4~0       ; |clock_divider|clk4~0       ; out              ;
+; |clock_divider|count~30     ; |clock_divider|count~30     ; out              ;
+; |clock_divider|count~31     ; |clock_divider|count~31     ; out              ;
+; |clock_divider|count~32     ; |clock_divider|count~32     ; out              ;
+; |clock_divider|count~33     ; |clock_divider|count~33     ; out              ;
+; |clock_divider|count2~20    ; |clock_divider|count2~20    ; out              ;
+; |clock_divider|count2~21    ; |clock_divider|count2~21    ; out              ;
+; |clock_divider|count2~22    ; |clock_divider|count2~22    ; out              ;
+; |clock_divider|count2~23    ; |clock_divider|count2~23    ; out              ;
+; |clock_divider|count2~24    ; |clock_divider|count2~24    ; out              ;
+; |clock_divider|count2~25    ; |clock_divider|count2~25    ; out              ;
+; |clock_divider|count[9]     ; |clock_divider|count[9]     ; regout           ;
+; |clock_divider|count[8]     ; |clock_divider|count[8]     ; regout           ;
+; |clock_divider|count[7]     ; |clock_divider|count[7]     ; regout           ;
+; |clock_divider|count[6]     ; |clock_divider|count[6]     ; regout           ;
+; |clock_divider|count[5]     ; |clock_divider|count[5]     ; regout           ;
+; |clock_divider|count3[9]    ; |clock_divider|count3[9]    ; regout           ;
+; |clock_divider|count3[8]    ; |clock_divider|count3[8]    ; regout           ;
+; |clock_divider|count3[7]    ; |clock_divider|count3[7]    ; regout           ;
+; |clock_divider|count3[6]    ; |clock_divider|count3[6]    ; regout           ;
+; |clock_divider|count3[5]    ; |clock_divider|count3[5]    ; regout           ;
+; |clock_divider|count3[4]    ; |clock_divider|count3[4]    ; regout           ;
+; |clock_divider|count3[3]    ; |clock_divider|count3[3]    ; regout           ;
+; |clock_divider|count3[2]    ; |clock_divider|count3[2]    ; regout           ;
+; |clock_divider|count3[1]    ; |clock_divider|count3[1]    ; regout           ;
+; |clock_divider|clk4~reg0    ; |clock_divider|clk4~reg0    ; regout           ;
+; |clock_divider|count2[9]    ; |clock_divider|count2[9]    ; regout           ;
+; |clock_divider|count2[8]    ; |clock_divider|count2[8]    ; regout           ;
+; |clock_divider|count2[7]    ; |clock_divider|count2[7]    ; regout           ;
+; |clock_divider|count2[6]    ; |clock_divider|count2[6]    ; regout           ;
+; |clock_divider|count2[5]    ; |clock_divider|count2[5]    ; regout           ;
+; |clock_divider|count2[4]    ; |clock_divider|count2[4]    ; regout           ;
+; |clock_divider|clk4         ; |clock_divider|clk4         ; pin_out          ;
+; |clock_divider|LessThan0~0  ; |clock_divider|LessThan0~0  ; out0             ;
+; |clock_divider|LessThan0~1  ; |clock_divider|LessThan0~1  ; out0             ;
+; |clock_divider|LessThan0~2  ; |clock_divider|LessThan0~2  ; out0             ;
+; |clock_divider|LessThan0~3  ; |clock_divider|LessThan0~3  ; out0             ;
+; |clock_divider|LessThan0~4  ; |clock_divider|LessThan0~4  ; out0             ;
+; |clock_divider|LessThan0~5  ; |clock_divider|LessThan0~5  ; out0             ;
+; |clock_divider|LessThan0~6  ; |clock_divider|LessThan0~6  ; out0             ;
+; |clock_divider|LessThan0~7  ; |clock_divider|LessThan0~7  ; out0             ;
+; |clock_divider|LessThan0~8  ; |clock_divider|LessThan0~8  ; out0             ;
+; |clock_divider|LessThan0~9  ; |clock_divider|LessThan0~9  ; out0             ;
+; |clock_divider|LessThan0~10 ; |clock_divider|LessThan0~10 ; out0             ;
+; |clock_divider|LessThan0~11 ; |clock_divider|LessThan0~11 ; out0             ;
+; |clock_divider|Add0~1       ; |clock_divider|Add0~1       ; out0             ;
+; |clock_divider|Add0~2       ; |clock_divider|Add0~2       ; out0             ;
+; |clock_divider|Add0~3       ; |clock_divider|Add0~3       ; out0             ;
+; |clock_divider|Add0~4       ; |clock_divider|Add0~4       ; out0             ;
+; |clock_divider|Add0~5       ; |clock_divider|Add0~5       ; out0             ;
+; |clock_divider|Add0~6       ; |clock_divider|Add0~6       ; out0             ;
+; |clock_divider|Add0~7       ; |clock_divider|Add0~7       ; out0             ;
+; |clock_divider|Add0~8       ; |clock_divider|Add0~8       ; out0             ;
+; |clock_divider|Add0~9       ; |clock_divider|Add0~9       ; out0             ;
+; |clock_divider|Add0~10      ; |clock_divider|Add0~10      ; out0             ;
+; |clock_divider|Add0~11      ; |clock_divider|Add0~11      ; out0             ;
+; |clock_divider|Add0~12      ; |clock_divider|Add0~12      ; out0             ;
+; |clock_divider|Add0~13      ; |clock_divider|Add0~13      ; out0             ;
+; |clock_divider|Add0~14      ; |clock_divider|Add0~14      ; out0             ;
+; |clock_divider|Add0~15      ; |clock_divider|Add0~15      ; out0             ;
+; |clock_divider|Add0~16      ; |clock_divider|Add0~16      ; out0             ;
+; |clock_divider|Add1~7       ; |clock_divider|Add1~7       ; out0             ;
+; |clock_divider|Add1~8       ; |clock_divider|Add1~8       ; out0             ;
+; |clock_divider|Add1~9       ; |clock_divider|Add1~9       ; out0             ;
+; |clock_divider|Add1~10      ; |clock_divider|Add1~10      ; out0             ;
+; |clock_divider|Add1~11      ; |clock_divider|Add1~11      ; out0             ;
+; |clock_divider|Add1~12      ; |clock_divider|Add1~12      ; out0             ;
+; |clock_divider|Add1~13      ; |clock_divider|Add1~13      ; out0             ;
+; |clock_divider|Add1~14      ; |clock_divider|Add1~14      ; out0             ;
+; |clock_divider|Add1~15      ; |clock_divider|Add1~15      ; out0             ;
+; |clock_divider|Add1~16      ; |clock_divider|Add1~16      ; out0             ;
+; |clock_divider|Add3~9       ; |clock_divider|Add3~9       ; out0             ;
+; |clock_divider|Add3~10      ; |clock_divider|Add3~10      ; out0             ;
+; |clock_divider|Add3~11      ; |clock_divider|Add3~11      ; out0             ;
+; |clock_divider|Add3~12      ; |clock_divider|Add3~12      ; out0             ;
+; |clock_divider|Add3~13      ; |clock_divider|Add3~13      ; out0             ;
+; |clock_divider|Add3~14      ; |clock_divider|Add3~14      ; out0             ;
+; |clock_divider|Add3~15      ; |clock_divider|Add3~15      ; out0             ;
+; |clock_divider|Add3~16      ; |clock_divider|Add3~16      ; out0             ;
++-----------------------------+-----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                     ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |clock_divider|count~0      ; |clock_divider|count~0      ; out              ;
+; |clock_divider|count~1      ; |clock_divider|count~1      ; out              ;
+; |clock_divider|count~2      ; |clock_divider|count~2      ; out              ;
+; |clock_divider|count~3      ; |clock_divider|count~3      ; out              ;
+; |clock_divider|count2~0     ; |clock_divider|count2~0     ; out              ;
+; |clock_divider|count2~1     ; |clock_divider|count2~1     ; out              ;
+; |clock_divider|count2~2     ; |clock_divider|count2~2     ; out              ;
+; |clock_divider|count2~3     ; |clock_divider|count2~3     ; out              ;
+; |clock_divider|count2~4     ; |clock_divider|count2~4     ; out              ;
+; |clock_divider|count2~5     ; |clock_divider|count2~5     ; out              ;
+; |clock_divider|count~10     ; |clock_divider|count~10     ; out              ;
+; |clock_divider|count~11     ; |clock_divider|count~11     ; out              ;
+; |clock_divider|count~12     ; |clock_divider|count~12     ; out              ;
+; |clock_divider|count~13     ; |clock_divider|count~13     ; out              ;
+; |clock_divider|count2~10    ; |clock_divider|count2~10    ; out              ;
+; |clock_divider|count2~11    ; |clock_divider|count2~11    ; out              ;
+; |clock_divider|count2~12    ; |clock_divider|count2~12    ; out              ;
+; |clock_divider|count2~13    ; |clock_divider|count2~13    ; out              ;
+; |clock_divider|count2~14    ; |clock_divider|count2~14    ; out              ;
+; |clock_divider|count2~15    ; |clock_divider|count2~15    ; out              ;
+; |clock_divider|count3~0     ; |clock_divider|count3~0     ; out              ;
+; |clock_divider|count3~1     ; |clock_divider|count3~1     ; out              ;
+; |clock_divider|count3~2     ; |clock_divider|count3~2     ; out              ;
+; |clock_divider|count3~3     ; |clock_divider|count3~3     ; out              ;
+; |clock_divider|count3~4     ; |clock_divider|count3~4     ; out              ;
+; |clock_divider|count3~5     ; |clock_divider|count3~5     ; out              ;
+; |clock_divider|count3~6     ; |clock_divider|count3~6     ; out              ;
+; |clock_divider|count3~7     ; |clock_divider|count3~7     ; out              ;
+; |clock_divider|count~20     ; |clock_divider|count~20     ; out              ;
+; |clock_divider|count~21     ; |clock_divider|count~21     ; out              ;
+; |clock_divider|count~22     ; |clock_divider|count~22     ; out              ;
+; |clock_divider|count~23     ; |clock_divider|count~23     ; out              ;
+; |clock_divider|count3~10    ; |clock_divider|count3~10    ; out              ;
+; |clock_divider|count3~11    ; |clock_divider|count3~11    ; out              ;
+; |clock_divider|count3~12    ; |clock_divider|count3~12    ; out              ;
+; |clock_divider|count3~13    ; |clock_divider|count3~13    ; out              ;
+; |clock_divider|count3~14    ; |clock_divider|count3~14    ; out              ;
+; |clock_divider|count3~15    ; |clock_divider|count3~15    ; out              ;
+; |clock_divider|count3~16    ; |clock_divider|count3~16    ; out              ;
+; |clock_divider|count3~17    ; |clock_divider|count3~17    ; out              ;
+; |clock_divider|clk4~0       ; |clock_divider|clk4~0       ; out              ;
+; |clock_divider|count~30     ; |clock_divider|count~30     ; out              ;
+; |clock_divider|count~31     ; |clock_divider|count~31     ; out              ;
+; |clock_divider|count~32     ; |clock_divider|count~32     ; out              ;
+; |clock_divider|count~33     ; |clock_divider|count~33     ; out              ;
+; |clock_divider|count2~20    ; |clock_divider|count2~20    ; out              ;
+; |clock_divider|count2~21    ; |clock_divider|count2~21    ; out              ;
+; |clock_divider|count2~22    ; |clock_divider|count2~22    ; out              ;
+; |clock_divider|count2~23    ; |clock_divider|count2~23    ; out              ;
+; |clock_divider|count2~24    ; |clock_divider|count2~24    ; out              ;
+; |clock_divider|count2~25    ; |clock_divider|count2~25    ; out              ;
+; |clock_divider|count[9]     ; |clock_divider|count[9]     ; regout           ;
+; |clock_divider|count[8]     ; |clock_divider|count[8]     ; regout           ;
+; |clock_divider|count[7]     ; |clock_divider|count[7]     ; regout           ;
+; |clock_divider|count[6]     ; |clock_divider|count[6]     ; regout           ;
+; |clock_divider|count[5]     ; |clock_divider|count[5]     ; regout           ;
+; |clock_divider|count3[9]    ; |clock_divider|count3[9]    ; regout           ;
+; |clock_divider|count3[8]    ; |clock_divider|count3[8]    ; regout           ;
+; |clock_divider|count3[7]    ; |clock_divider|count3[7]    ; regout           ;
+; |clock_divider|count3[6]    ; |clock_divider|count3[6]    ; regout           ;
+; |clock_divider|count3[5]    ; |clock_divider|count3[5]    ; regout           ;
+; |clock_divider|count3[4]    ; |clock_divider|count3[4]    ; regout           ;
+; |clock_divider|count3[3]    ; |clock_divider|count3[3]    ; regout           ;
+; |clock_divider|count3[2]    ; |clock_divider|count3[2]    ; regout           ;
+; |clock_divider|count3[1]    ; |clock_divider|count3[1]    ; regout           ;
+; |clock_divider|count3[0]    ; |clock_divider|count3[0]    ; regout           ;
+; |clock_divider|clk4~reg0    ; |clock_divider|clk4~reg0    ; regout           ;
+; |clock_divider|count2[9]    ; |clock_divider|count2[9]    ; regout           ;
+; |clock_divider|count2[8]    ; |clock_divider|count2[8]    ; regout           ;
+; |clock_divider|count2[7]    ; |clock_divider|count2[7]    ; regout           ;
+; |clock_divider|count2[6]    ; |clock_divider|count2[6]    ; regout           ;
+; |clock_divider|count2[5]    ; |clock_divider|count2[5]    ; regout           ;
+; |clock_divider|count2[4]    ; |clock_divider|count2[4]    ; regout           ;
+; |clock_divider|clk3~reg0    ; |clock_divider|clk3~reg0    ; regout           ;
+; |clock_divider|rst          ; |clock_divider|rst          ; out              ;
+; |clock_divider|clk3         ; |clock_divider|clk3         ; pin_out          ;
+; |clock_divider|clk4         ; |clock_divider|clk4         ; pin_out          ;
+; |clock_divider|LessThan0~0  ; |clock_divider|LessThan0~0  ; out0             ;
+; |clock_divider|LessThan0~1  ; |clock_divider|LessThan0~1  ; out0             ;
+; |clock_divider|LessThan0~2  ; |clock_divider|LessThan0~2  ; out0             ;
+; |clock_divider|LessThan0~3  ; |clock_divider|LessThan0~3  ; out0             ;
+; |clock_divider|LessThan0~4  ; |clock_divider|LessThan0~4  ; out0             ;
+; |clock_divider|LessThan0~5  ; |clock_divider|LessThan0~5  ; out0             ;
+; |clock_divider|LessThan0~6  ; |clock_divider|LessThan0~6  ; out0             ;
+; |clock_divider|LessThan0~7  ; |clock_divider|LessThan0~7  ; out0             ;
+; |clock_divider|LessThan0~8  ; |clock_divider|LessThan0~8  ; out0             ;
+; |clock_divider|LessThan0~9  ; |clock_divider|LessThan0~9  ; out0             ;
+; |clock_divider|LessThan0~10 ; |clock_divider|LessThan0~10 ; out0             ;
+; |clock_divider|LessThan0~11 ; |clock_divider|LessThan0~11 ; out0             ;
+; |clock_divider|Add0~0       ; |clock_divider|Add0~0       ; out0             ;
+; |clock_divider|Add0~1       ; |clock_divider|Add0~1       ; out0             ;
+; |clock_divider|Add0~2       ; |clock_divider|Add0~2       ; out0             ;
+; |clock_divider|Add0~3       ; |clock_divider|Add0~3       ; out0             ;
+; |clock_divider|Add0~4       ; |clock_divider|Add0~4       ; out0             ;
+; |clock_divider|Add0~5       ; |clock_divider|Add0~5       ; out0             ;
+; |clock_divider|Add0~6       ; |clock_divider|Add0~6       ; out0             ;
+; |clock_divider|Add0~7       ; |clock_divider|Add0~7       ; out0             ;
+; |clock_divider|Add0~8       ; |clock_divider|Add0~8       ; out0             ;
+; |clock_divider|Add0~9       ; |clock_divider|Add0~9       ; out0             ;
+; |clock_divider|Add0~10      ; |clock_divider|Add0~10      ; out0             ;
+; |clock_divider|Add0~11      ; |clock_divider|Add0~11      ; out0             ;
+; |clock_divider|Add0~12      ; |clock_divider|Add0~12      ; out0             ;
+; |clock_divider|Add0~13      ; |clock_divider|Add0~13      ; out0             ;
+; |clock_divider|Add0~14      ; |clock_divider|Add0~14      ; out0             ;
+; |clock_divider|Add0~15      ; |clock_divider|Add0~15      ; out0             ;
+; |clock_divider|Add0~16      ; |clock_divider|Add0~16      ; out0             ;
+; |clock_divider|Add1~7       ; |clock_divider|Add1~7       ; out0             ;
+; |clock_divider|Add1~8       ; |clock_divider|Add1~8       ; out0             ;
+; |clock_divider|Add1~9       ; |clock_divider|Add1~9       ; out0             ;
+; |clock_divider|Add1~10      ; |clock_divider|Add1~10      ; out0             ;
+; |clock_divider|Add1~11      ; |clock_divider|Add1~11      ; out0             ;
+; |clock_divider|Add1~12      ; |clock_divider|Add1~12      ; out0             ;
+; |clock_divider|Add1~13      ; |clock_divider|Add1~13      ; out0             ;
+; |clock_divider|Add1~14      ; |clock_divider|Add1~14      ; out0             ;
+; |clock_divider|Add1~15      ; |clock_divider|Add1~15      ; out0             ;
+; |clock_divider|Add1~16      ; |clock_divider|Add1~16      ; out0             ;
+; |clock_divider|Add3~9       ; |clock_divider|Add3~9       ; out0             ;
+; |clock_divider|Add3~10      ; |clock_divider|Add3~10      ; out0             ;
+; |clock_divider|Add3~11      ; |clock_divider|Add3~11      ; out0             ;
+; |clock_divider|Add3~12      ; |clock_divider|Add3~12      ; out0             ;
+; |clock_divider|Add3~13      ; |clock_divider|Add3~13      ; out0             ;
+; |clock_divider|Add3~14      ; |clock_divider|Add3~14      ; out0             ;
+; |clock_divider|Add3~15      ; |clock_divider|Add3~15      ; out0             ;
+; |clock_divider|Add3~16      ; |clock_divider|Add3~16      ; out0             ;
++-----------------------------+-----------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Jun 03 22:49:27 2020
+Info: Command: quartus_sim --simulation_results_format=VWF clock_divider -c clock_divider
+Info (324025): Using vector source file "E:/altera/13.0sp1/project/clock_divider/Waveform11.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      58.94 %
+Info (328052): Number of transitions in simulation is 12871799
+Info (324045): Vector file clock_divider.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4466 megabytes
+    Info: Processing ended: Wed Jun 03 22:53:38 2020
+    Info: Elapsed time: 00:04:11
+    Info: Total CPU time (on all processors): 00:04:12
+
+

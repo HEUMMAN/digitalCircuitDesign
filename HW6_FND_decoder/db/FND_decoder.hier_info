@@ -1,0 +1,17 @@
+|FND_decoder
+SW_in[0] => Decoder0.IN3
+SW_in[1] => Decoder0.IN2
+SW_in[2] => Decoder0.IN1
+SW_in[3] => Decoder0.IN0
+FND_out[0] <= FND_out~1.DB_MAX_OUTPUT_PORT_TYPE
+FND_out[1] <= FND_out~0.DB_MAX_OUTPUT_PORT_TYPE
+FND_out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+FND_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+FND_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+FND_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+FND_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+FND_out[7] <= <GND>
+FND_out[8] <= <GND>
+FND_out[9] <= <GND>
+
+

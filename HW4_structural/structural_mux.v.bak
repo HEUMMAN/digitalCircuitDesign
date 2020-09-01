@@ -1,0 +1,15 @@
+module structural_mux (s, sel, out);
+	input(7:0) s;
+	input(2:0) sel;
+	output out;
+	
+	and S0 (out=s[0], sel[0]=0, sel[1]=0, sel[2]=0);
+	and S1 (out=s[1]. sel[0]=0, sel[1]=0, sel[2]=1);
+	and S2 (out=s[2]. sel[0]=0, sel[1]=1, sel[2]=0);
+	and S3 (out=s[3]. sel[0]=0, sel[1]=1, sel[2]=1);
+	and S4 (out=s[4]. sel[0]=1, sel[1]=0, sel[2]=0);
+	and S5 (out=s[5]. sel[0]=1, sel[1]=0, sel[2]=1);
+	and S6 (out=s[6]. sel[0]=1, sel[1]=1, sel[2]=0);
+	and S7 (out=s[7]. sel[0]=1, sel[1]=1, sel[2]=1);		
+
+endmodule

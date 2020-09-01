@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\altera\13.0sp1\project\HW_13\simulation\modelsim
+vDUT_TEST
+!i10b 1
+!s100 1UUNB7A6>::D]_2Lf7oRN0
+IYGJ?XhWj1Hi>[N8L[L=BS1
+VWnNPVLEC;HBB<SRUgVS:60
+Z1 dE:\altera\13.0sp1\project\HW_13\simulation\modelsim
+Z2 w1592210928
+Z3 8E:/altera/13.0sp1/project/HW_13/DUT_TEST.v
+Z4 FE:/altera/13.0sp1/project/HW_13/DUT_TEST.v
+L0 1
+Z5 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z6 !s108 1592210991.206000
+Z7 !s107 E:/altera/13.0sp1/project/HW_13/DUT_TEST.v|
+Z8 !s90 -reportprogress|300|-work|work|E:/altera/13.0sp1/project/HW_13/DUT_TEST.v|
+!s101 -O0
+Z9 o-work work -O0
+n@d@u@t_@t@e@s@t
+vDUT_TEST_tb
+!i10b 1
+!s100 WbKECT3n[aeilFC3nSaec2
+IVR@TB4NWD_b97N<XLMbeB3
+V?CH>2EU^k[373h4[<5`N]0
+R1
+R2
+R3
+R4
+L0 33
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+n@d@u@t_@t@e@s@t_tb

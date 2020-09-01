@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\altera\13.0sp1\project\clock_divider\simulation\qsim
+vclock_divider
+Z1 IP;WEC7oj_C1`Uz7E=@kdA0
+Z2 V0LPHkLO^EIO5l7F^9G`SA1
+Z3 dE:\altera\13.0sp1\project\clock_divider\simulation\qsim
+Z4 w1591190951
+Z5 8clock_divider.vo
+Z6 Fclock_divider.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 6UmO7Wm^CZW43^]co;Ym01
+!s85 0
+Z10 !s108 1591190953.194000
+Z11 !s107 clock_divider.vo|
+Z12 !s90 -work|work|clock_divider.vo|
+!s101 -O0
+vclock_divider_vlg_check_tst
+!i10b 1
+!s100 ]76Li4fXc<=o^:_[R6B7_2
+I>5R7^SX:Y^^6V>9NnLFK40
+V3T2O8N1oPJ51CLPcR[R>h2
+R3
+Z13 w1591190950
+Z14 8clock_divider.vt
+Z15 Fclock_divider.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z16 !s108 1591190953.320000
+Z17 !s107 clock_divider.vt|
+Z18 !s90 -work|work|clock_divider.vt|
+!s101 -O0
+R8
+vclock_divider_vlg_sample_tst
+!i10b 1
+!s100 d7_hdD7EQfzi4FhzkVif00
+ITYlcFlJ6oTNe?jmJ1[n773
+V`QDkJeZ0iGe0EKZg6W6Vn2
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vclock_divider_vlg_vec_tst
+!i10b 1
+!s100 hbR=d4lXP0CUzN3=2zaV22
+I?Mm32Q;>UcXDIn<L4B31f0
+Vad=CL6[N77GJ9ToT7on382
+R3
+R13
+R14
+R15
+L0 235
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

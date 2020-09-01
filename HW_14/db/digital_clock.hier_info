@@ -1,0 +1,337 @@
+|digital_clock
+clock => clock.IN1
+reset => reset.IN3
+FND3[0] <= negative_tri_state_buffer_N_bit:buffer_3.out
+FND3[1] <= negative_tri_state_buffer_N_bit:buffer_3.out
+FND3[2] <= negative_tri_state_buffer_N_bit:buffer_3.out
+FND3[3] <= negative_tri_state_buffer_N_bit:buffer_3.out
+FND3[4] <= negative_tri_state_buffer_N_bit:buffer_3.out
+FND3[5] <= negative_tri_state_buffer_N_bit:buffer_3.out
+FND3[6] <= negative_tri_state_buffer_N_bit:buffer_3.out
+FND2[0] <= negative_tri_state_buffer_N_bit:buffer_2.out
+FND2[1] <= negative_tri_state_buffer_N_bit:buffer_2.out
+FND2[2] <= negative_tri_state_buffer_N_bit:buffer_2.out
+FND2[3] <= negative_tri_state_buffer_N_bit:buffer_2.out
+FND2[4] <= negative_tri_state_buffer_N_bit:buffer_2.out
+FND2[5] <= negative_tri_state_buffer_N_bit:buffer_2.out
+FND2[6] <= negative_tri_state_buffer_N_bit:buffer_2.out
+FND1[0] <= negative_tri_state_buffer_N_bit:buffer_1.out
+FND1[1] <= negative_tri_state_buffer_N_bit:buffer_1.out
+FND1[2] <= negative_tri_state_buffer_N_bit:buffer_1.out
+FND1[3] <= negative_tri_state_buffer_N_bit:buffer_1.out
+FND1[4] <= negative_tri_state_buffer_N_bit:buffer_1.out
+FND1[5] <= negative_tri_state_buffer_N_bit:buffer_1.out
+FND1[6] <= negative_tri_state_buffer_N_bit:buffer_1.out
+FND0[0] <= negative_tri_state_buffer_N_bit:buffer_0.out
+FND0[1] <= negative_tri_state_buffer_N_bit:buffer_0.out
+FND0[2] <= negative_tri_state_buffer_N_bit:buffer_0.out
+FND0[3] <= negative_tri_state_buffer_N_bit:buffer_0.out
+FND0[4] <= negative_tri_state_buffer_N_bit:buffer_0.out
+FND0[5] <= negative_tri_state_buffer_N_bit:buffer_0.out
+FND0[6] <= negative_tri_state_buffer_N_bit:buffer_0.out
+out_min_tens[0] <= w3[0].DB_MAX_OUTPUT_PORT_TYPE
+out_min_tens[1] <= w3[1].DB_MAX_OUTPUT_PORT_TYPE
+out_min_tens[2] <= w3[2].DB_MAX_OUTPUT_PORT_TYPE
+out_min_tens[3] <= w3[3].DB_MAX_OUTPUT_PORT_TYPE
+out_min_ones[0] <= w4[0].DB_MAX_OUTPUT_PORT_TYPE
+out_min_ones[1] <= w4[1].DB_MAX_OUTPUT_PORT_TYPE
+out_min_ones[2] <= w4[2].DB_MAX_OUTPUT_PORT_TYPE
+out_min_ones[3] <= w4[3].DB_MAX_OUTPUT_PORT_TYPE
+out_sec_tens[0] <= w5[0].DB_MAX_OUTPUT_PORT_TYPE
+out_sec_tens[1] <= w5[1].DB_MAX_OUTPUT_PORT_TYPE
+out_sec_tens[2] <= w5[2].DB_MAX_OUTPUT_PORT_TYPE
+out_sec_tens[3] <= w5[3].DB_MAX_OUTPUT_PORT_TYPE
+out_sec_ones[0] <= w6[0].DB_MAX_OUTPUT_PORT_TYPE
+out_sec_ones[1] <= w6[1].DB_MAX_OUTPUT_PORT_TYPE
+out_sec_ones[2] <= w6[2].DB_MAX_OUTPUT_PORT_TYPE
+out_sec_ones[3] <= w6[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|clock_divider:clock_divider_1_hz
+reset => clock_out~reg0.ACLR
+reset => internal_count[0].ACLR
+reset => internal_count[1].ACLR
+reset => internal_count[2].ACLR
+reset => internal_count[3].ACLR
+reset => internal_count[4].ACLR
+reset => internal_count[5].ACLR
+reset => internal_count[6].ACLR
+reset => internal_count[7].ACLR
+reset => internal_count[8].ACLR
+reset => internal_count[9].ACLR
+reset => internal_count[10].ACLR
+reset => internal_count[11].ACLR
+reset => internal_count[12].ACLR
+reset => internal_count[13].ACLR
+reset => internal_count[14].ACLR
+reset => internal_count[15].ACLR
+reset => internal_count[16].ACLR
+reset => internal_count[17].ACLR
+reset => internal_count[18].ACLR
+reset => internal_count[19].ACLR
+reset => internal_count[20].ACLR
+reset => internal_count[21].ACLR
+reset => internal_count[22].ACLR
+reset => internal_count[23].ACLR
+reset => internal_count[24].ACLR
+reset => internal_count[25].ACLR
+reset => internal_count[26].ACLR
+reset => internal_count[27].ACLR
+reset => internal_count[28].ACLR
+reset => internal_count[29].ACLR
+reset => internal_count[30].ACLR
+reset => internal_count[31].ACLR
+clock_in => clock_out~reg0.CLK
+clock_in => internal_count[0].CLK
+clock_in => internal_count[1].CLK
+clock_in => internal_count[2].CLK
+clock_in => internal_count[3].CLK
+clock_in => internal_count[4].CLK
+clock_in => internal_count[5].CLK
+clock_in => internal_count[6].CLK
+clock_in => internal_count[7].CLK
+clock_in => internal_count[8].CLK
+clock_in => internal_count[9].CLK
+clock_in => internal_count[10].CLK
+clock_in => internal_count[11].CLK
+clock_in => internal_count[12].CLK
+clock_in => internal_count[13].CLK
+clock_in => internal_count[14].CLK
+clock_in => internal_count[15].CLK
+clock_in => internal_count[16].CLK
+clock_in => internal_count[17].CLK
+clock_in => internal_count[18].CLK
+clock_in => internal_count[19].CLK
+clock_in => internal_count[20].CLK
+clock_in => internal_count[21].CLK
+clock_in => internal_count[22].CLK
+clock_in => internal_count[23].CLK
+clock_in => internal_count[24].CLK
+clock_in => internal_count[25].CLK
+clock_in => internal_count[26].CLK
+clock_in => internal_count[27].CLK
+clock_in => internal_count[28].CLK
+clock_in => internal_count[29].CLK
+clock_in => internal_count[30].CLK
+clock_in => internal_count[31].CLK
+clock_out <= clock_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|timer_00_59:timer
+reset => out_10min_BCD[0]~reg0.ACLR
+reset => out_10min_BCD[1]~reg0.ACLR
+reset => out_10min_BCD[2]~reg0.ACLR
+reset => out_10min_BCD[3]~reg0.ACLR
+reset => out_1min_BCD[0]~reg0.ACLR
+reset => out_1min_BCD[1]~reg0.ACLR
+reset => out_1min_BCD[2]~reg0.ACLR
+reset => out_1min_BCD[3]~reg0.ACLR
+reset => out_10sec_BCD[0]~reg0.ACLR
+reset => out_10sec_BCD[1]~reg0.ACLR
+reset => out_10sec_BCD[2]~reg0.ACLR
+reset => out_10sec_BCD[3]~reg0.ACLR
+reset => out_1sec_BCD[0]~reg0.ACLR
+reset => out_1sec_BCD[1]~reg0.ACLR
+reset => out_1sec_BCD[2]~reg0.ACLR
+reset => out_1sec_BCD[3]~reg0.ACLR
+clock => out_10min_BCD[0]~reg0.CLK
+clock => out_10min_BCD[1]~reg0.CLK
+clock => out_10min_BCD[2]~reg0.CLK
+clock => out_10min_BCD[3]~reg0.CLK
+clock => out_1min_BCD[0]~reg0.CLK
+clock => out_1min_BCD[1]~reg0.CLK
+clock => out_1min_BCD[2]~reg0.CLK
+clock => out_1min_BCD[3]~reg0.CLK
+clock => out_10sec_BCD[0]~reg0.CLK
+clock => out_10sec_BCD[1]~reg0.CLK
+clock => out_10sec_BCD[2]~reg0.CLK
+clock => out_10sec_BCD[3]~reg0.CLK
+clock => out_1sec_BCD[0]~reg0.CLK
+clock => out_1sec_BCD[1]~reg0.CLK
+clock => out_1sec_BCD[2]~reg0.CLK
+clock => out_1sec_BCD[3]~reg0.CLK
+out_1sec_BCD[0] <= out_1sec_BCD[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_1sec_BCD[1] <= out_1sec_BCD[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_1sec_BCD[2] <= out_1sec_BCD[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_1sec_BCD[3] <= out_1sec_BCD[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_10sec_BCD[0] <= out_10sec_BCD[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_10sec_BCD[1] <= out_10sec_BCD[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_10sec_BCD[2] <= out_10sec_BCD[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_10sec_BCD[3] <= out_10sec_BCD[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_1min_BCD[0] <= out_1min_BCD[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_1min_BCD[1] <= out_1min_BCD[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_1min_BCD[2] <= out_1min_BCD[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_1min_BCD[3] <= out_1min_BCD[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_10min_BCD[0] <= out_10min_BCD[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_10min_BCD[1] <= out_10min_BCD[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_10min_BCD[2] <= out_10min_BCD[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_10min_BCD[3] <= out_10min_BCD[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|fnd_driver:FND_driver_min_tens
+in_BCD[0] => Decoder0.IN3
+in_BCD[1] => Decoder0.IN2
+in_BCD[2] => Decoder0.IN1
+in_BCD[3] => Decoder0.IN0
+out_FND[0] <= out_FND.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|fnd_driver:FND_driver_min_ones
+in_BCD[0] => Decoder0.IN3
+in_BCD[1] => Decoder0.IN2
+in_BCD[2] => Decoder0.IN1
+in_BCD[3] => Decoder0.IN0
+out_FND[0] <= out_FND.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|fnd_driver:FND_driver_sec_tens
+in_BCD[0] => Decoder0.IN3
+in_BCD[1] => Decoder0.IN2
+in_BCD[2] => Decoder0.IN1
+in_BCD[3] => Decoder0.IN0
+out_FND[0] <= out_FND.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|fnd_driver:FND_driver_sec_ones
+in_BCD[0] => Decoder0.IN3
+in_BCD[1] => Decoder0.IN2
+in_BCD[2] => Decoder0.IN1
+in_BCD[3] => Decoder0.IN0
+out_FND[0] <= out_FND.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out_FND[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|ring_counter_4_bit:ring_counter
+reset => out[0]~reg0.PRESET
+reset => out[1]~reg0.PRESET
+reset => out[2]~reg0.PRESET
+reset => out[3]~reg0.ACLR
+clock => out[0]~reg0.CLK
+clock => out[1]~reg0.CLK
+clock => out[2]~reg0.CLK
+clock => out[3]~reg0.CLK
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|negative_tri_state_buffer_N_bit:buffer_0
+in_disable => out[0].OE
+in_disable => out[1].OE
+in_disable => out[2].OE
+in_disable => out[3].OE
+in_disable => out[4].OE
+in_disable => out[5].OE
+in_disable => out[6].OE
+in[0] => out[0].DATAIN
+in[1] => out[1].DATAIN
+in[2] => out[2].DATAIN
+in[3] => out[3].DATAIN
+in[4] => out[4].DATAIN
+in[5] => out[5].DATAIN
+in[6] => out[6].DATAIN
+out[0] <= out[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2].DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3].DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out[4].DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out[5].DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|negative_tri_state_buffer_N_bit:buffer_1
+in_disable => out[0].OE
+in_disable => out[1].OE
+in_disable => out[2].OE
+in_disable => out[3].OE
+in_disable => out[4].OE
+in_disable => out[5].OE
+in_disable => out[6].OE
+in[0] => out[0].DATAIN
+in[1] => out[1].DATAIN
+in[2] => out[2].DATAIN
+in[3] => out[3].DATAIN
+in[4] => out[4].DATAIN
+in[5] => out[5].DATAIN
+in[6] => out[6].DATAIN
+out[0] <= out[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2].DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3].DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out[4].DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out[5].DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|negative_tri_state_buffer_N_bit:buffer_2
+in_disable => out[0].OE
+in_disable => out[1].OE
+in_disable => out[2].OE
+in_disable => out[3].OE
+in_disable => out[4].OE
+in_disable => out[5].OE
+in_disable => out[6].OE
+in[0] => out[0].DATAIN
+in[1] => out[1].DATAIN
+in[2] => out[2].DATAIN
+in[3] => out[3].DATAIN
+in[4] => out[4].DATAIN
+in[5] => out[5].DATAIN
+in[6] => out[6].DATAIN
+out[0] <= out[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2].DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3].DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out[4].DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out[5].DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|negative_tri_state_buffer_N_bit:buffer_3
+in_disable => out[0].OE
+in_disable => out[1].OE
+in_disable => out[2].OE
+in_disable => out[3].OE
+in_disable => out[4].OE
+in_disable => out[5].OE
+in_disable => out[6].OE
+in[0] => out[0].DATAIN
+in[1] => out[1].DATAIN
+in[2] => out[2].DATAIN
+in[3] => out[3].DATAIN
+in[4] => out[4].DATAIN
+in[5] => out[5].DATAIN
+in[6] => out[6].DATAIN
+out[0] <= out[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2].DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3].DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out[4].DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out[5].DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out[6].DB_MAX_OUTPUT_PORT_TYPE
+
+

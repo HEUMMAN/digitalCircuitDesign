@@ -1,0 +1,145 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\altera\13.0sp1\project\HW_14\simulation\modelsim
+vclock_divider
+I?1kPKQVT;P95Q>iMzG;CS2
+V`K]on6:IH<5[egRhHK7>>3
+Z1 dE:\altera\13.0sp1\project\HW_14\simulation\modelsim
+Z2 w1592792031
+Z3 8E:/altera/13.0sp1/project/HW_14/digital_clock.v
+Z4 FE:/altera/13.0sp1/project/HW_14/digital_clock.v
+L0 40
+Z5 OV;L;10.1d;51
+r1
+31
+Z6 !s108 1592792066.147000
+Z7 !s107 E:/altera/13.0sp1/project/HW_14/digital_clock.v|
+Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/altera/13.0sp1/project/HW_14|E:/altera/13.0sp1/project/HW_14/digital_clock.v|
+Z9 o-vlog01compat -work work -O0
+Z10 !s92 -vlog01compat -work work +incdir+E:/altera/13.0sp1/project/HW_14 -O0
+!i10b 1
+!s100 _F:JMKcFmMVW`g?YYA3bn3
+!s85 0
+!s101 -O0
+vdigital_clock
+IHZ0BMN55g]7mVTEQ58h==2
+V8ngIKK_<DUDL;h>a`FRXE2
+R1
+R2
+R3
+R4
+L0 1
+R5
+r1
+31
+R6
+R7
+R8
+R9
+R10
+!i10b 1
+!s100 [0l]cI4T4UlK6Z<>lmUjF1
+!s85 0
+!s101 -O0
+vdigital_clock_tb
+!i10b 1
+!s100 ;E_c76a>B4:YUR=?noRbF3
+IUz@[DTz=FDFI9Z5KnS5OX1
+VmZMK=fEQENK_TTHJ_2`YX1
+R1
+w1592314720
+8E:/altera/13.0sp1/project/HW_14/digital_clock_tb.v
+FE:/altera/13.0sp1/project/HW_14/digital_clock_tb.v
+L0 2
+R5
+r1
+!s85 0
+31
+!s108 1592792267.410000
+!s107 E:/altera/13.0sp1/project/HW_14/digital_clock_tb.v|
+!s90 -reportprogress|300|-work|work|E:/altera/13.0sp1/project/HW_14/digital_clock_tb.v|
+!s101 -O0
+o-work work -O0
+vfnd_driver
+IcN]@aBUYLa6>koQ^DOH_70
+Vz4mz7T<[aF2RVg1idQm`n3
+R1
+R2
+R3
+R4
+L0 144
+R5
+r1
+31
+R6
+R7
+R8
+R9
+R10
+!i10b 1
+!s100 3D3]GhRlZFQ9UPMNh;]<=0
+!s85 0
+!s101 -O0
+vnegative_tri_state_buffer_N_bit
+I?BTNcg42e07DBTE:_mjNY0
+VV1`KB1dm:]dIQk34M_@V31
+R1
+R2
+R3
+R4
+L0 86
+R5
+r1
+31
+R6
+R7
+R8
+R9
+R10
+nnegative_tri_state_buffer_@n_bit
+!i10b 1
+!s100 1e@nZOnc4IV37<VDIGYnA0
+!s85 0
+!s101 -O0
+vring_counter_4_bit
+IIIkiS=F:c]0]RN5I5kS0G1
+VT`<8^DcL^?YJ9_]kN_D`J2
+R1
+R2
+R3
+R4
+L0 69
+R5
+r1
+31
+R6
+R7
+R8
+R9
+R10
+!i10b 1
+!s100 XgSLQK<`B=7cUhM[IUQkD1
+!s85 0
+!s101 -O0
+vtimer_00_59
+I<n3?4HTPDWP5?EC_Z`lZ_2
+VATGD7LG8]kz:7D@Vj:czi1
+R1
+R2
+R3
+R4
+L0 99
+R5
+r1
+31
+R6
+R7
+R8
+R9
+R10
+!i10b 1
+!s100 I=3Ck0<T56lS8WP>LDm:o3
+!s85 0
+!s101 -O0

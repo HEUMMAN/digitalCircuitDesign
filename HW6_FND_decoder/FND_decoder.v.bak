@@ -1,0 +1,20 @@
+module FND_decoder(SW_in, FND_out);
+
+	input [0:3] SW_in;
+	output [0:9] FND_out;
+	
+	always@(SW_in) begin
+	 case(SW_in)
+		4'b0000 : FND_out = 7'100_0000;
+		4'b0001 : FND_out = 7'111_1001;
+		4'b0010 : FND_out = 7'010_0100;
+		4'b0011 : FND_out = 7'011_0000;
+		4'b0100 : FND_out = 7'001_1001;
+		4'b0101 : FND_out = 7'001_0010;
+		4'b0110 : FND_out = 7'000_0010;
+		4'b0111 : FND_out = 7'101_1000;
+		4'b1000 : FND_out = 7'000_0000;
+		4'b1001 : FND_out = 7'001_0000;
+		dafault : FND_out = 7'100_0000;
+	endcase
+endmodule

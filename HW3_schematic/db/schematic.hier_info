@@ -1,0 +1,11 @@
+|schematic
+output_C <= inst.DB_MAX_OUTPUT_PORT_TYPE
+input_A => inst.IN0
+input_A => inst1.IN0
+input_A => inst2.IN1
+output_D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+input_B => inst1.IN1
+input_B => inst2.IN0
+output_E <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

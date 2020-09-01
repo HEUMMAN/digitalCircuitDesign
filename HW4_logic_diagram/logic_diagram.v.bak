@@ -1,0 +1,11 @@
+module logic_diagram(mux_s, mux_sel, mux_out, demux_s, demux_sel, demux_out)
+	input [3:0] mux_s;
+	input [1:0] mux_sel;
+	input [1:0] demux_sel;
+	
+	output mux_out, demux_out;
+	
+	
+	assign demux_out = demux_sel[s[sel]];
+	
+endmodule

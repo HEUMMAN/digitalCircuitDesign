@@ -1,0 +1,23 @@
+module HW7_JKFF(q, q_bar, clk, j, k, clr, preset);
+	input clk, j, k;
+	output q, q_bar;
+	reg q, q_bar;
+	initial q = 0, q_bar = 1;
+	
+	
+if(posedge clk)
+	begin q <= q; q_bar <= q_bar;
+	end
+
+else		
+	begin
+		case(j)
+			0: if (k == 0) begin q <= q; q_bar <= q_bar; end
+				else begin q <= 0; q_bar <= 1; end
+			1: if (k == 1) begin q <= q_bar; q_bar <= q; end					
+			   else begin q <= 1; q_bar <= 0; end
+		endcase
+	end
+end
+endmodule
+			

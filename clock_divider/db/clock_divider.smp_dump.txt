@@ -1,0 +1,9 @@
+
+State Machine - |clock_divider|st_c
+Name st_c.s2 st_c.s5 st_c.s4 st_c.s3 st_c.s1 st_c.s0 
+st_c.s0 0 0 0 0 0 0 
+st_c.s1 0 0 0 0 1 1 
+st_c.s3 0 0 0 1 0 1 
+st_c.s4 0 0 1 0 0 1 
+st_c.s5 0 1 0 0 0 1 
+st_c.s2 1 0 0 0 0 1 

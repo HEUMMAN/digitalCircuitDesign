@@ -1,0 +1,11 @@
+|verilog_code
+input_A => output_D~0.IN0
+input_A => output_E~0.IN0
+input_A => output_C.DATAIN
+input_B => output_D~0.IN1
+input_B => output_E~0.IN1
+output_C <= input_A.DB_MAX_OUTPUT_PORT_TYPE
+output_D <= output_D~0.DB_MAX_OUTPUT_PORT_TYPE
+output_E <= output_E~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

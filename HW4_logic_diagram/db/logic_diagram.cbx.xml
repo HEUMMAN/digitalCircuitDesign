@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="logic_diagram">
+		<CBX_INST_ENTRY INSTANCE_NAME="|logic_diagram|lpm_mux:Mux0" CBX_FILE_NAME="mux_umc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,19 @@
+module dataflow_mux(s, sel, out)
+
+	input[2:0] sel;
+	input[7:0] s;
+	output out;
+	
+	
+	assign s[0] = ~sel[2] & ~sel[1] & ~sel[0];
+	assign s[1] = ~sel[2] & ~sel[1] & sel[0];
+	assign s[2] = ~sel[2] & sel[1] & ~sel[0];
+	assign s[3] = ~sel[2] & sel[1] & sel[0];
+	assign s[4] = sel[2] & ~sel[1] & ~sel[0];
+	assign s[5] = sel[2] & ~sel[1] & sel[0];
+	assign s[6] = sel[2] & sel[1] & ~sel[0];
+	assign s[7] = sel[2] & sel[1] & sel[0];
+	
+	assign out = s[0] | s[1]| s[2]| s[3]| s[4]| s[5]| s[6]| s[7];
+	
+endmodule

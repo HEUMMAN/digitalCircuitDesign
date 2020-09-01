@@ -1,0 +1,11 @@
+module HW5_substractor(A, B,Z, E, Sum/Diff, Bin/Carry);
+	input [0:3]A, [0:3]B, Z, E;
+	output Sum/Diff, Bin/Carry;
+	
+	always @(E)
+		case (E)
+		0: assign {Bin/Carry, Sum/Diff} = z + y + x ;
+		1: assign {Sum/Diff, Bin/Carry} = x - y - z ;
+		endcase
+endmodule
+	

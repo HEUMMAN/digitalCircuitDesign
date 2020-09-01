@@ -1,0 +1,19 @@
+|logic_diagram
+Ent[0] => Mux0.IN3
+Ent[1] => Mux0.IN2
+Ent[2] => Mux0.IN1
+Ent[3] => Mux0.IN0
+SM[0] => Mux0.IN5
+SM[1] => Mux0.IN4
+SD[0] => L~2.IN1
+SD[0] => L~5.IN1
+SD[0] => L~3.IN1
+SD[0] => L~0.IN1
+SD[1] => L~4.IN1
+SD[1] => L~1.IN1
+L[1] <= L~0.DB_MAX_OUTPUT_PORT_TYPE
+L[2] <= L~2.DB_MAX_OUTPUT_PORT_TYPE
+L[3] <= L~3.DB_MAX_OUTPUT_PORT_TYPE
+L[4] <= L~5.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,36 @@
+|HW9_counter
+Q_60[0] <= Q_60[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_60[1] <= Q_60[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_60[2] <= Q_60[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_60[3] <= Q_60[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_60[4] <= Q_60[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_60[5] <= Q_60[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_24[0] <= Q_24[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_24[1] <= Q_24[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_24[2] <= Q_24[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_24[3] <= Q_24[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_24[4] <= Q_24[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => Q_24[0]~reg0.CLK
+clk => Q_24[1]~reg0.CLK
+clk => Q_24[2]~reg0.CLK
+clk => Q_24[3]~reg0.CLK
+clk => Q_24[4]~reg0.CLK
+clk => Q_60[0]~reg0.CLK
+clk => Q_60[1]~reg0.CLK
+clk => Q_60[2]~reg0.CLK
+clk => Q_60[3]~reg0.CLK
+clk => Q_60[4]~reg0.CLK
+clk => Q_60[5]~reg0.CLK
+rst => Q_24[0]~reg0.ACLR
+rst => Q_24[1]~reg0.ACLR
+rst => Q_24[2]~reg0.ACLR
+rst => Q_24[3]~reg0.ACLR
+rst => Q_24[4]~reg0.ACLR
+rst => Q_60[0]~reg0.ACLR
+rst => Q_60[1]~reg0.ACLR
+rst => Q_60[2]~reg0.ACLR
+rst => Q_60[3]~reg0.ACLR
+rst => Q_60[4]~reg0.ACLR
+rst => Q_60[5]~reg0.ACLR
+
+

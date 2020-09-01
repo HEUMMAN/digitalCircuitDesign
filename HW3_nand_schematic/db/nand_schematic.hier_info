@@ -1,0 +1,14 @@
+|nand_schematic
+output_C <= inst.DB_MAX_OUTPUT_PORT_TYPE
+input_A => inst.IN0
+input_A => inst.IN1
+input_A => inst6.IN1
+input_A => inst8.IN0
+input_A => inst8.IN1
+output_D <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+input_B => inst6.IN0
+input_B => inst9.IN0
+input_B => inst9.IN1
+output_E <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+

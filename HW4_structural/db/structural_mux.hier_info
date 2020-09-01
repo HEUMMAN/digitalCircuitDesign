@@ -1,0 +1,36 @@
+|structural_mux
+s[0] => and0.IN0
+s[1] => and1.IN0
+s[2] => and2.IN0
+s[3] => and3.IN0
+s[4] => and4.IN0
+s[5] => and5.IN0
+s[6] => and6.IN0
+s[7] => and7.IN0
+sel[0] => and1.IN1
+sel[0] => and3.IN1
+sel[0] => and5.IN1
+sel[0] => and7.IN1
+sel[0] => and0.IN1
+sel[0] => and2.IN1
+sel[0] => and4.IN1
+sel[0] => and6.IN1
+sel[1] => and2.IN2
+sel[1] => and3.IN2
+sel[1] => and6.IN2
+sel[1] => and7.IN2
+sel[1] => and0.IN2
+sel[1] => and1.IN2
+sel[1] => and4.IN2
+sel[1] => and5.IN2
+sel[2] => and4.IN3
+sel[2] => and5.IN3
+sel[2] => and6.IN3
+sel[2] => and7.IN3
+sel[2] => and0.IN3
+sel[2] => and1.IN3
+sel[2] => and2.IN3
+sel[2] => and3.IN3
+out <= or_output.DB_MAX_OUTPUT_PORT_TYPE
+
+
